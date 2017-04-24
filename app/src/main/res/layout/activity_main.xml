@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context="com.example.rahul.vitarak.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+
+        <TextView
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vitarak"
+            android:textSize="70dp"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mobile_card"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardCornerRadius="5dp">
+
+
+        <LinearLayout
+        android:id="@+id/userslide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+            android:background="#ffffff">
+
+        <ImageView
+            style="@style/login_imageview"
+            android:src="@drawable/user"
+            android:background="#ffffff"/>
+
+        <EditText
+            android:id="@+id/edt_username"
+            style="@style/login_edittext"
+            android:hint="User Name or email Id"/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardCornerRadius="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#ffffff">
+
+                <ImageView
+                    style="@style/login_imageview"
+                    android:src="@drawable/pass"
+                    android:background="#ffffff"/>
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    style="@style/login_edittext"
+                    android:hint="Password"/>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txt_forgotpassword"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textStyle="italic"
+            android:gravity="end"
+            android:text="Forgot Password ?"/>
+
+
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_marginTop="40dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonbackground"
+            android:textColor="#ffffff"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txt_signup"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
